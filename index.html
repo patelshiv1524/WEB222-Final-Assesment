@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllAboutMe</title>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+    <script src="https://kit.fontawesome.com/a46eba1ffb.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+
+            <a class="nav-link" href="#Home">Home</a>  <!-- Direct to Home -->
+            <a class="nav-link" href="#Info">AboutMe</a>    <!-- Direct to AboutMe -->
+            <a class="nav-link" href="#Edu">Edu&Skills</a>       <!-- Direct to Edu&Skills -->
+            <a href="https://github.com/patelshiv1524">Github</a>   <!-- Direct to My Github Profile -->
+
+    </nav>
+  <header>
+
+<section class="Home" id="Home">
+    <section class="Bio">
+    <div class="image">
+        <img src="./91766402-1ffe-4ca1-9c51-bae1d316c115 (1).jpeg" alt="Shiv Patel">
+    </div>
+    <h1 class="greeting">Hello<span class="happy">:)</span></h1>
+    <div class="Name">I'm Shiv Patel</section><br></div>
+    <p class="position">Software Developer</p>
+
+      <div class="buttons" id="button">  <a href="Shivkumar Resume.docx" download>
+        <button class="button"><i class="fa fa-download"></i>Resume</button></a>
+
+        <a href="#Letsconnect">
+            <button class="button" id="button">Contact</button></a>
+        </div>
+    </div>
+    </section>
+</section>
+
+<!-- About me begins here-->
+
+<section class="Info" id="Info">
+ <h2>About Me</h2>
+        <section class="aboutMe">
+            <section class="flexbox">
+
+                <div class="CLGinfo">
+                    <h3>Basic Information</h3>
+                    <table>
+                    <tr><p><td><span class=" bold">Age:</span></td>                 <td><span class="right1">19</span></p></td></tr>
+                    <tr><p><td><span class=" bold">Email:</span></td>               <td><span class="right2">spatel612@myseneca.ca</span></td></p></tr>
+                    <tr><p><td><span class=" bold">Language:</span></td>            <td><span class="right3">English, Gujarati, Hindi</span></td></p></tr>
+                    <tr><p><td><span class=" bold">Class Section:</span></td>       <td><span class="right4">NDD</span></td></p></tr>
+                    <tr><p><td><span class=" bold">Student ID:</span></td>     <td><span class="right5">175539212</span></td></p></tr>
+                    <tr><p><td><span class=" bold">Instructor:</span></td>         <td><span class="right6"> Mark Meritt</span></td></p></tr>
+                    </table>
+                </div>
+            
+                <div class="honesty">
+                
+                    <h3>Academic Honesty</h3>
+                <p class="academicHonesty">
+                    I declare that my assessment is wholly my own work in accordance with <span class="bold">Seneca Academic Policy.</span>
+                    No part of this assessment has been copied manually or electronically from any other source
+                    (including web sites) except for the information supplied by the WEB222 instructors and / or
+                     made available in this assessment for my use. I also declare that no part of this assignment has
+                    been distributed to other students.
+                </p>
+                <p class="Date"><span class="bold">Date:</span> 21<sup>nd</sup> April, 2023</p>
+                </div>
+            </section>
+        </section>
+
+</section>
+
+<!-- Education and skills starts form here-->
+
+<section class="Edu" id="Edu">
+    <section class="education">
+        <h2>Education</h2>
+        <div class="logo"></div>
+        <div class="school">
+
+            <p>Fertilizer Nagar School</p>
+            <p>Completed Higher Secondary</p>
+            <p>July 31</p>
+
+        </div><br>
+       
+
+        <div class="school">
+
+            <p>Seneca College</p>
+
+            <p>Computer Programming and Analysis </p>
+            <p>2022-2025(expected)</p>
+        </div>
+    </section>
+    <section class="skills">
+        <h2>Desire to learn</h2>
+        <p>Below are some languages and skills which I want to learn at Seneca College</p>
+        <ul>
+            <li>Cloud</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Database Managment</li>
+            
+
+        </ul>
+    </section>
+</section>
+
+
+
+
+<!-- form html starts here-->
+
+<section class="Letsconnect" id="Letsconnect">
+
+    <h1> Let's Connect </h1> 
+    <form action="https://httpbin.org/post" method="post" class="form" id="form">              
+        <div class="form">
+            <label for="name" >Name:</label > <br>
+            <input type="text" name="name"  id="name" value="" placeholder="Enter your name" maxlength="50" required  >
+            <br><br>
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="email" value placeholder="example@gmail.com" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="50" size="20erm" required>
+            <br>
+            <br>
+            <label for="Address">Address:</label> <br>
+            <input type="text" name="Address" id="address"  value="" placeholder="Enter street address" maxlength="75" required>
+            <br><br>
+            
+                <label for="name" > City:</label> <br>
+                <input list="CITY" id="choice" required name="choice" placeholder="Enter your City" />
+                <datalist id="CITY">
+                    <option value="Toronto">
+                    <option  value="Calgary">
+                    <option value="Halifax"> 
+                    <option value="Montreal">
+                    <option value="Niagara falls">
+                    <option value="Vancouver">
+                    <option value="Victoria">
+                    <option  value="Quebec city">
+                    
+                </datalist>
+            
+            </div>
+            <br><br>
+            <label for="Postalcode">Postalcode:</label> <br>
+            <input set type="tel"  id="postal" name="postal" value="" maxlength="7" placeholder="Enter your postalcode" required>
+            <br>
+            <br>
+            <div class="formButton">
+           
+            <input type="radio" name="About" value = "Question" id="question"><label> Question</label>
+            <input type="radio" name="About" value = "Comment" id="comment"><label> Comment</label>
+            <input type="radio" name="About" value = "Hiring" id="hiring"><label> Hiring</label>
+            </div>     
+            <br><br>
+            <label for="Message">Enter your Message:</label><br>
+            <textarea id="Message" name="Message" rows="5" cols="50" required></textarea>            
+        </div>
+        <div id="isvalid"></div>
+        </div>
+        <br>
+        <br>
+        <div class="formsubmit">
+            <input name="submit" type="submit" value="Submit" id="submit">
+            <input name="clear" type="reset" id="clear" value="Refresh">
+        </div>
+        <br><br><br>
+    </form>
+</section>
+<footer>
+    <nav class="navfooter">
+        <div class="icons">
+            <a href="https://www.instagram.com/shivpatel_1714"><i class="fa-brands fa-instagram fa-lg" style="color: #C13584;"></i></a>
+        </div>
+        <p>This is my first profile website</p>
+        
+    </nav>
+</footer> 
+
+</body>
+</html>
